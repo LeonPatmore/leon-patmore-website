@@ -7,5 +7,11 @@ test:
 fmt:
 	npx prettier -c "**"
 
-run:
+build:
+	npm run build
+
+run: build
 	npm start
+
+dev:
+	npx nuxt
