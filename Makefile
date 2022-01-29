@@ -15,3 +15,9 @@ run: build
 
 dev:
 	npx nuxt
+
+local: build
+	npx sls offline start
+
+push: build
+	npx sls deploy

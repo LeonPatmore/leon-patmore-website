@@ -30,3 +30,13 @@ custom:
             - '*/*'
     serverless-offline:
         noPrependStageInUrl: true
+
+package:
+    patterns:
+        - '!**/*'
+        - src/static/**
+        - .nuxt/dist/**
+        - handler.js
+        - nuxtBuild.js
+        - binaryMimeTypes.js
+        - node_modules/**

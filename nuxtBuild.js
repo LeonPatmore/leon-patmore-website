@@ -1,4 +1,4 @@
-const { Nuxt } = require('nuxt');
+const { Nuxt } = require('nuxt-start');
 
 const config = require('./nuxt.config.js');
 
