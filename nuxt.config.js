@@ -22,5 +22,7 @@ module.exports = {
     components: true,
     buildModules: ['@nuxtjs/vuetify'],
     modules: ['bootstrap-vue/nuxt'],
-    build: {},
+    // build: {
+    //     publicPath: `/${process.env.NODE_ENV}/_nuxt/`, // <= add the path to the cached files
+    // },
 };

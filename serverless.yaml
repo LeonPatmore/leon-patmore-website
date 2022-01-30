@@ -1,7 +1,5 @@
 service: nuxt-ssr-lambda
-
 useDotenv: true
-
 provider:
     name: aws
     runtime: nodejs14.x
@@ -34,9 +32,9 @@ custom:
 package:
     patterns:
         - '!**/*'
-        - src/static/**
-        - .nuxt/dist/**
+        - .nuxt/**
         - handler.js
         - nuxtBuild.js
         - binaryMimeTypes.js
         - node_modules/**
+        - nuxt.config.js

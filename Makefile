@@ -19,5 +19,11 @@ dev:
 local: build
 	npx sls offline start
 
-push: build
-	npx sls deploy
+deploy:
+	npx sls deploy --package ./package
+
+package:
+	docker build -t web-package .
+	docker run --name web-package -d web-package
+	docker cp web-package:/app/package ./package
+	docker rm -f web-package
