@@ -16,6 +16,9 @@ run: build
 dev:
 	npx nuxt
 
+clean:
+	rm ./package
+
 local: build
 	npx sls offline start
 
