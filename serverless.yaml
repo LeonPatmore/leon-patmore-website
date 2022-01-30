@@ -10,25 +10,32 @@ provider:
         NODE_ENV: ${env:NODE_ENV}
     apiGateway:
         shouldStartNameWithService: true
-
 functions:
     nuxt:
         handler: handler.nuxt
         events:
             - http: ANY /
             - http: ANY /{proxy+}
-
 plugins:
     - serverless-apigw-binary
     - serverless-offline
-
+    - serverless-domain-manager
 custom:
     apigwBinary:
         types:
             - '*/*'
     serverless-offline:
         noPrependStageInUrl: true
-
+    customDomain:
+        domainName: ${env:DOMAIN}
+        basePath: ''
+        hostedZoneId: ${env:HOSTED_ZONE_ID}
+        stage: ${self:provider.stage}
+        createRoute53Record: true
+        endpointType: regional
+        certificateArn: ${env:CERTIFICATE_ARN}
+        securityPolicy: tls_1_2
+        apiType: rest
 package:
     patterns:
         - '!**/*'
