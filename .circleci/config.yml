@@ -28,6 +28,10 @@ jobs:
                   name: Build nuxt
                   command: npm run build
 
+            - run:
+                  name: Package
+                  command: npx serverless package --package /app/package
+
 workflows:
     version: 2
     ci:
