@@ -13,6 +13,14 @@
                         <v-list-item-title>About</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+                <v-list-item to="/projects" nuxt-link>
+                    <v-list-item-icon>
+                        <v-icon> mdi-message-text </v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Projects</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-list>
         </v-navigation-drawer>
         <v-app-bar app dark absolute>
