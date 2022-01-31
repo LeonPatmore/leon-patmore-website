@@ -24,7 +24,7 @@ jobs:
                   name: Run tests
                   command: npm run test
 
-            - build:
+            - run:
                   name: Build nuxt
                   command: npm run build
 
