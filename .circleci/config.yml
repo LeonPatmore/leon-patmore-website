@@ -22,15 +22,15 @@ jobs:
 
             - run:
                   name: Run tests
-                  command: npm run test
+                  command: make test
 
             - run:
                   name: Build nuxt
-                  command: npm run build
+                  command: make build
 
             - run:
                   name: Package
-                  command: npx serverless package --package /app/package
+                  command: make package
 
 workflows:
     version: 2
