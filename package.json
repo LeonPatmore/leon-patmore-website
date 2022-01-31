@@ -10,6 +10,7 @@
         "test": "jest"
     },
     "dependencies": {
+        "@vue/vue2-jest": "^27.0.0-alpha.4",
         "bootstrap-vue": "^2.21.2",
         "core-js": "^3.20.3",
         "nuxt-start": "^2.15.8",
@@ -17,9 +18,14 @@
         "serverless-http": "^2.7.0"
     },
     "devDependencies": {
+        "@babel/core": "^7.16.12",
+        "@babel/preset-env": "^7.16.11",
         "@nuxtjs/vuetify": "^1.12.3",
+        "babel-core": "^7.0.0-bridge.0",
+        "jest": "^27.4.7",
         "nuxt": "^2.15.8",
         "serverless-domain-manager": "^5.8.0",
-        "serverless-offline": "^8.4.0"
+        "serverless-offline": "^8.4.0",
+        "vue-jest": "^3.0.7"
     }
 }
