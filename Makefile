@@ -35,4 +35,4 @@ docker-package:
 	docker rm -f web-package
 
 deploy:
-	npx sls deploy --package ./package
+	npx serverless deploy --package ./package

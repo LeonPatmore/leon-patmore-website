@@ -1,13 +1,13 @@
 <template>
     <div>
         <span class="bg"></span>
-        <v-card class="border-0" color="rgb(0, 0, 0, 0)">
+        <v-card outlined color="transparent">
             <v-card-title class="justify-center">
-                <div class="text-title text-md-h1 text">Projects</div>
+                <div class="text-title text-md-h1 title-color">Projects</div>
             </v-card-title>
         </v-card>
-        <v-card class="border-0">
-            <v-card-text>
+        <v-card outlined color="transparent">
+            <v-card-text class="text-center text-md-h5 white--text">
                 See all my projects at:
                 <a href="https://github.com/LeonPatmore">
                     https://github.com/LeonPatmore
@@ -21,7 +21,10 @@
 </template>
 
 <style scoped>
-.text {
+a {
+    color: inherit;
+}
+.title-color {
     color: rgb(255, 255, 255, 0.8);
 }
 .bg {
