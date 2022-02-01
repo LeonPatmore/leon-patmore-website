@@ -3,11 +3,11 @@ useDotenv: true
 provider:
     name: aws
     runtime: nodejs14.x
-    stage: ${env:NODE_ENV}
+    stage: prod
     region: ${env:NUXT_AWS_REGION}
     lambdaHashingVersion: 20201221
     environment:
-        NODE_ENV: ${env:NODE_ENV}
+        NODE_ENV: prod
     apiGateway:
         shouldStartNameWithService: true
 functions:

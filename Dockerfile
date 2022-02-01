@@ -16,8 +16,6 @@ COPY nuxt.config.js nuxt.config.js
 COPY .env .env
 COPY serverless.yaml serverless.yaml
 
-ENV NODE_ENV prod
-
 RUN serverless package --package /app/package
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]
