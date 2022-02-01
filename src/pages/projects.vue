@@ -7,15 +7,19 @@
             </v-card-title>
         </v-card>
         <v-card outlined color="transparent">
-            <v-card-text class="text-center text-md-h5 white--text">
+            <v-card-text
+                class="text-center text-md-h5 white--text font-weight-light"
+            >
                 See all my projects at:
                 <a href="https://github.com/LeonPatmore">
                     https://github.com/LeonPatmore
                 </a>
             </v-card-text>
         </v-card>
-        <v-card title="" class="pa-2 ma-10">
-            <b-card-text> Hello there! </b-card-text>
+        <v-card class="pa-2 ma-10" outlined color="transparent">
+            <b-card-text class="white--text font-weight-light">
+                Hello there!
+            </b-card-text>
         </v-card>
     </div>
 </template>
@@ -36,7 +40,7 @@ a {
     background: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/organic-1280537_1280.jpg')
         no-repeat center center;
     background-size: cover;
-    background-color: red;
+    background-color: transparent;
     transform: scale(1.1);
 }
 </style>
