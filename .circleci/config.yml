@@ -32,6 +32,10 @@ jobs:
                   name: Package
                   command: make package
 
+            - run:
+                  name: Deploy
+                  command: make deploy
+
 workflows:
     version: 2
     ci:
