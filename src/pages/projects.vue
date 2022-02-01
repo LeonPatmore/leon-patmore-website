@@ -15,7 +15,7 @@
             </v-card-text>
         </v-card>
         <v-card title="" class="pa-2 ma-10">
-            <b-card-text> Hello </b-card-text>
+            <b-card-text> Hello there! </b-card-text>
         </v-card>
     </div>
 </template>
