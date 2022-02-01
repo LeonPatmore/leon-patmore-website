@@ -40,6 +40,6 @@ workflows:
     version: 2
     ci:
         jobs:
-            - deploy
+            - deploy:
                   context:
-                        - aws-creds
+                      - aws-creds
