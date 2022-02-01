@@ -41,3 +41,5 @@ workflows:
     ci:
         jobs:
             - deploy
+                  context:
+                        - aws-creds
