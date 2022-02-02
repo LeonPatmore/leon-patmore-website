@@ -7,29 +7,67 @@
             </v-card-title>
         </v-card>
         <v-card outlined color="transparent">
-            <v-card-text
-                class="text-center text-md-h5 white--text font-weight-light"
-            >
+            <div class="text-center text-md-h5 title-color font-weight-light">
                 See all my projects at:
                 <a href="https://github.com/LeonPatmore">
                     https://github.com/LeonPatmore
                 </a>
-            </v-card-text>
+            </div>
         </v-card>
-        <v-card class="pa-2 ma-10" outlined color="transparent">
-            <b-card-text class="white--text font-weight-light">
-                Hello there!
-            </b-card-text>
+        <v-card
+            v-for="project in projects"
+            v-bind:key="project.name"
+            class="pa-2 ma-10"
+            color="transparent"
+            hover
+            rounded
+        >
+            <a
+                :href="project.repo"
+                target="_blank"
+                style="text-decoration: none"
+            >
+                <v-card-title class="pa-1 white--text">{{
+                    project.name
+                }}</v-card-title>
+                <v-card-text class="pa-1 white--text font-weight-light">{{
+                    project.desc
+                }}</v-card-text>
+                <v-card-text class="pa-1 white--text font-weight-light">{{
+                    project.repo
+                }}</v-card-text>
+            </a>
         </v-card>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            projects: [
+                {
+                    name: 'Personal Website',
+                    desc: 'My personal VueJS website that you are viewing now!',
+                    repo: 'https://github.com/LeonPatmore/leon-patmore-website',
+                },
+                {
+                    name: 'Shopping Predictor',
+                    desc: 'A Python AWS Lambda with functions to make my life easier! Uses AWS SAM.',
+                    repo: 'https://github.com/LeonPatmore/life-efficiency',
+                },
+            ],
+        };
+    },
+};
+</script>
 
 <style scoped>
 a {
     color: inherit;
 }
 .title-color {
-    color: rgb(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255, 0.85);
 }
 .bg {
     width: 100%;
