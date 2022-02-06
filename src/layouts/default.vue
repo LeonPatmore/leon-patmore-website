@@ -3,15 +3,10 @@
         <v-navigation-drawer dark v-model="drawer" absolute temporary>
             <v-list rounded>
                 <v-list-item to="/" nuxt-link>
-                    <v-list-item-content>Home</v-list-item-content>
-                </v-list-item>
-                <v-list-item to="/about" nuxt-link>
                     <v-list-item-icon>
-                        <v-icon> mdi-message-text </v-icon>
+                        <v-icon>mdi-home</v-icon>
                     </v-list-item-icon>
-                    <v-list-item-content>
-                        <v-list-item-title>About</v-list-item-title>
-                    </v-list-item-content>
+                    <v-list-item-content>Home</v-list-item-content>
                 </v-list-item>
                 <v-list-item to="/projects" nuxt-link>
                     <v-list-item-icon>
