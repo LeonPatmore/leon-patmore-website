@@ -3,7 +3,7 @@
         <span class="bg"></span>
         <v-card outlined color="transparent">
             <v-card-title class="justify-center">
-                <div class="text-title text-md-h1 title-color">
+                <div class="text-md-h1 title-color mt-10 text-h3">
                     Leon Patmore
                 </div>
             </v-card-title>

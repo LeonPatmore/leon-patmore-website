@@ -3,7 +3,7 @@
         <span class="bg"></span>
         <v-card outlined color="transparent">
             <v-card-title class="justify-center">
-                <div class="text-title text-md-h1 title-color">Projects</div>
+                <div class="text-md-h1 title-color text-h3">Projects</div>
             </v-card-title>
         </v-card>
         <v-card outlined color="transparent">
