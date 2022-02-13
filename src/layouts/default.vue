@@ -16,6 +16,16 @@
                         <v-list-item-title>Projects</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+                <v-list-item
+                    href="https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/CV-Developer.pdf"
+                >
+                    <v-list-item-icon>
+                        <v-icon>mdi-file-document</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>CV</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-list>
         </v-navigation-drawer>
         <v-app-bar app dark absolute>

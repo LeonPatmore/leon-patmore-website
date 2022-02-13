@@ -1,1 +1,3 @@
-- Change bar colour
+- Change bar colour.
+- Add more icons to main page.
+- Generate a presigned url for CV.
