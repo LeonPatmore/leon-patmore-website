@@ -25,21 +25,40 @@
         <v-row>
             <v-col cols="12">
                 <v-card
+                    class="pa-5 ma-4 mb-1 mt-1 d-flex justify-center"
                     outlined
                     color="transparent"
-                    class="pa-5 ma-4 mb-1 mt-1"
-                    align="center"
                 >
                     <v-img
+                        v-for="img in images"
+                        v-bind:key="img"
+                        class="ma-2"
                         max-width="100"
                         contain
-                        src="/awsCertifiedDeveloper.png"
+                        :src="img"
                     ></v-img>
                 </v-card>
             </v-col>
         </v-row>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            images: [
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/awsCertifiedDeveloper.png',
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/helm.png',
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/java.png',
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/k8.png',
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/python.png',
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/spring.png',
+            ],
+        };
+    },
+};
+</script>
 
 <style>
 .title-color {
