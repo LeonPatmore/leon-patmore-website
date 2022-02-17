@@ -24,4 +24,4 @@ For building the Nuxt project.
 
 A super cool diagram of the website architecture.
 
-[Link](./diagram/README.md)
+[Link](./diagram)
