@@ -19,3 +19,9 @@ https://epndavis.com/blog/nuxtjs-serverless-side-rendering-on-aws-lambda/
 For building the Nuxt project.
 
 `make build`
+
+## Diagram
+
+A super cool diagram of the website architecture.
+
+[Link](./diagram/README.md)
