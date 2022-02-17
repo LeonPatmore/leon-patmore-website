@@ -5,16 +5,20 @@ from diagrams.aws.network import Route53
 from diagrams.aws.storage import S3
 from diagrams.custom import Custom
 
+font_colour = "black"
+
 diagram_attributes = {
+    "pad": "0.1",
     "fontsize": "45",
-    "bgcolor": "transparent"
+    "fontcolor": font_colour,
+    "bgcolor": "white",
 }
 
 cluster_attributes = {
     "bgcolor": "transparent",
 }
 
-with Diagram("My Website", graph_attr=diagram_attributes):
+with Diagram("My Website", graph_attr=diagram_attributes, node_attr={"fontsize": "18", "fontcolor": font_colour}):
     mobile = Mobile("User")
     cv_store = S3("CV")
     image_store = S3("Images")

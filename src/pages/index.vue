@@ -40,6 +40,20 @@
                 </v-card>
             </v-col>
         </v-row>
+        <v-row>
+            <v-col cols="12">
+                <v-card
+                    class="pa-5 ma-4 mb-0 mt-0 d-flex justify-center"
+                    outlined
+                    color="transparent"
+                >
+                    <v-img
+                        max-width="700"
+                        src="https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/my_website.png"
+                    />
+                </v-card>
+            </v-col>
+        </v-row>
     </div>
 </template>
 
