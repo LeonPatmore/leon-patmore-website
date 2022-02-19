@@ -1,59 +1,58 @@
 <template>
     <div>
         <span class="bg"></span>
-        <v-card outlined color="transparent">
-            <v-card-title class="justify-center">
-                <div class="text-md-h1 title-color mt-10 text-h3">
-                    Leon Patmore
-                </div>
-            </v-card-title>
-        </v-card>
-        <v-row justify="center">
-            <v-col cols="12">
-                <v-card
-                    outlined
-                    color="transparent"
-                    class="pa-5 ma-4 mb-1 mt-1 pt-0"
-                >
-                    <v-card-text class="text-center text-subtitle-1 black--text"
-                        >Hello and welcome to my website! Please find my CV and
-                        projects on the other pages.</v-card-text
+        <v-container>
+            <v-row>
+                <v-col cols="12">
+                    <v-card outlined color="transparent">
+                        <v-card-title class="justify-center">
+                            <div class="text-md-h1 title-color mt-10 text-h3">
+                                Leon Patmore
+                            </div>
+                        </v-card-title>
+                    </v-card>
+                </v-col>
+            </v-row>
+            <v-row class="no-gutters">
+                <v-col cols="12">
+                    <v-card outlined color="transparent" class="pa-5 pt-0">
+                        <v-card-text
+                            class="text-center text-subtitle-1 black--text"
+                            >Hello and welcome to my website! Please find my CV
+                            and projects on the other pages.</v-card-text
+                        >
+                    </v-card>
+                </v-col>
+            </v-row>
+            <v-row class="justify-center no-gutters">
+                <v-col :lg="8" :md="10" cols="12">
+                    <v-card outlined color="transparent" class="pa-5">
+                        <v-img
+                            max-width="100%"
+                            src="https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/my_website.png"
+                        />
+                    </v-card>
+                </v-col>
+            </v-row>
+            <v-row class="no-gutters">
+                <v-col cols="12">
+                    <v-card
+                        outlined
+                        color="transparent"
+                        class="pa-5 d-flex justify-center"
                     >
-                </v-card>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col cols="12">
-                <v-card
-                    class="pa-5 ma-4 mb-1 mt-1 d-flex justify-center"
-                    outlined
-                    color="transparent"
-                >
-                    <v-img
-                        v-for="img in images"
-                        v-bind:key="img"
-                        class="ma-2"
-                        max-width="100"
-                        contain
-                        :src="img"
-                    ></v-img>
-                </v-card>
-            </v-col>
-        </v-row>
-        <v-row>
-            <v-col cols="12">
-                <v-card
-                    class="pa-5 ma-4 mb-0 mt-0 d-flex justify-center"
-                    outlined
-                    color="transparent"
-                >
-                    <v-img
-                        max-width="700"
-                        src="https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/my_website.png"
-                    />
-                </v-card>
-            </v-col>
-        </v-row>
+                        <v-img
+                            v-for="img in images"
+                            v-bind:key="img"
+                            class="ma-1"
+                            max-width="100"
+                            contain
+                            :src="img"
+                        ></v-img>
+                    </v-card>
+                </v-col>
+            </v-row>
+        </v-container>
     </div>
 </template>
 

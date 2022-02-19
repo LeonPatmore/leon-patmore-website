@@ -1,43 +1,47 @@
 <template>
     <div>
         <span class="bg"></span>
-        <v-card outlined color="transparent">
-            <v-card-title class="justify-center">
-                <div class="text-md-h1 title-color text-h3">Projects</div>
-            </v-card-title>
-        </v-card>
-        <v-card outlined color="transparent">
-            <div class="text-center text-md-h5 title-color font-weight-light">
-                See all my projects at:
-                <a href="https://github.com/LeonPatmore">
-                    https://github.com/LeonPatmore
-                </a>
-            </div>
-        </v-card>
-        <v-card
-            v-for="project in projects"
-            v-bind:key="project.name"
-            class="pa-2 ma-10"
-            color="transparent"
-            hover
-            rounded
-        >
-            <a
-                :href="project.repo"
-                target="_blank"
-                style="text-decoration: none"
+        <v-container>
+            <v-card outlined color="transparent">
+                <v-card-title class="justify-center">
+                    <div class="text-md-h1 title-color text-h3">Projects</div>
+                </v-card-title>
+            </v-card>
+            <v-card outlined color="transparent">
+                <div
+                    class="text-center text-md-h5 title-color font-weight-light"
+                >
+                    See all my projects at:
+                    <a href="https://github.com/LeonPatmore">
+                        https://github.com/LeonPatmore
+                    </a>
+                </div>
+            </v-card>
+            <v-card
+                v-for="project in projects"
+                v-bind:key="project.name"
+                class="pa-2 ma-10"
+                color="transparent"
+                hover
+                rounded
             >
-                <v-card-title class="pa-1 white--text">{{
-                    project.name
-                }}</v-card-title>
-                <v-card-text class="pa-1 white--text font-weight-light">{{
-                    project.desc
-                }}</v-card-text>
-                <v-card-text class="pa-1 white--text font-weight-light">{{
-                    project.repo
-                }}</v-card-text>
-            </a>
-        </v-card>
+                <a
+                    :href="project.repo"
+                    target="_blank"
+                    style="text-decoration: none"
+                >
+                    <v-card-title class="pa-1 white--text">{{
+                        project.name
+                    }}</v-card-title>
+                    <v-card-text class="pa-1 white--text font-weight-light">{{
+                        project.desc
+                    }}</v-card-text>
+                    <v-card-text class="pa-1 white--text font-weight-light">{{
+                        project.repo
+                    }}</v-card-text>
+                </a>
+            </v-card>
+        </v-container>
     </div>
 </template>
 
