@@ -6,7 +6,9 @@
                 <v-col cols="12">
                     <v-card outlined color="transparent">
                         <v-card-title class="justify-center">
-                            <div class="text-md-h1 title-color mt-10 text-h2">
+                            <div
+                                class="text-sm-h2 text-md-h1 title-color mt-10 text-h4"
+                            >
                                 Leon Patmore
                             </div>
                         </v-card-title>
@@ -64,6 +66,8 @@ export default {
                 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/k8.png',
                 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/python.png',
                 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/spring.png',
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/nodeJs.png',
+                'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/kotlin.png',
             ],
         };
     },

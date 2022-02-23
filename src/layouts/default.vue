@@ -1,6 +1,12 @@
 <template>
     <v-app>
-        <v-navigation-drawer dark v-model="drawer" absolute temporary>
+        <v-navigation-drawer
+            dark
+            v-model="drawer"
+            absolute
+            temporary
+            color="grey darken-1"
+        >
             <v-list rounded>
                 <v-list-item to="/" nuxt-link>
                     <v-list-item-icon>
@@ -28,7 +34,14 @@
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
-        <v-app-bar app dark absolute>
+        <v-app-bar
+            app
+            dark
+            absolute
+            color="grey darken-1"
+            elevation="10"
+            shaped
+        >
             <v-app-bar-nav-icon
                 dark
                 @click.stop="drawer = !drawer"
