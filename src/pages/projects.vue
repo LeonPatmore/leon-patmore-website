@@ -60,6 +60,21 @@ export default {
                     desc: 'A Python AWS Lambda with functions to make my life easier! Uses AWS SAM.',
                     repo: 'https://github.com/LeonPatmore/life-efficiency',
                 },
+                {
+                    name: 'Behave Healthchecks',
+                    desc: 'A plugin for Behave, which automatically sends healthcheck io updates.',
+                    repo: 'https://github.com/LeonPatmore/behave-healthchecks',
+                },
+                {
+                    name: 'Mongo Rest API',
+                    desc: 'A REST API for MongoDB written in kotlin.',
+                    repo: 'https://github.com/LeonPatmore/document-reader',
+                },
+                {
+                    name: 'Spammer',
+                    desc: 'A performance testing tool written in NodeJS.',
+                    repo: 'https://github.com/LeonPatmore/spammer-v2',
+                },
             ],
         };
     },
