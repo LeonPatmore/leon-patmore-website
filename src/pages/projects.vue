@@ -25,21 +25,33 @@
                 hover
                 rounded
             >
-                <a
-                    :href="project.repo"
-                    target="_blank"
-                    style="text-decoration: none"
-                >
-                    <v-card-title class="pa-1 white--text">{{
-                        project.name
-                    }}</v-card-title>
-                    <v-card-text class="pa-1 white--text font-weight-light">{{
-                        project.desc
-                    }}</v-card-text>
-                    <v-card-text class="pa-1 white--text font-weight-light">{{
-                        project.repo
-                    }}</v-card-text>
-                </a>
+                <div class="d-flex flex-no-wrap justify-space-between">
+                    <a
+                        :href="project.repo"
+                        target="_blank"
+                        style="text-decoration: none"
+                    >
+                        <v-card-title class="pa-1 white--text">{{
+                            project.name
+                        }}</v-card-title>
+                        <v-card-text
+                            class="pa-1 white--text font-weight-light"
+                            >{{ project.desc }}</v-card-text
+                        >
+                        <v-card-text
+                            class="pa-1 white--text font-weight-light"
+                            >{{ project.repo }}</v-card-text
+                        >
+                    </a>
+                    <v-img
+                        class="ma-3"
+                        min-width="50"
+                        width="2vh"
+                        max-width="150"
+                    >
+                        <v-img :src="project.lang"></v-img>
+                    </v-img>
+                </div>
             </v-card>
         </v-container>
     </div>
@@ -54,26 +66,37 @@ export default {
                     name: 'Personal Website',
                     desc: 'My personal VueJS website that you are viewing now!',
                     repo: 'https://github.com/LeonPatmore/leon-patmore-website',
+                    lang: 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/vuejs.png',
                 },
                 {
                     name: 'Shopping Predictor',
                     desc: 'A Python AWS Lambda with functions to make my life easier! Uses AWS SAM.',
                     repo: 'https://github.com/LeonPatmore/life-efficiency',
+                    lang: 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/python.png',
                 },
                 {
                     name: 'Behave Healthchecks',
                     desc: 'A plugin for Behave, which automatically sends healthcheck io updates.',
                     repo: 'https://github.com/LeonPatmore/behave-healthchecks',
+                    lang: 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/python.png',
                 },
                 {
                     name: 'Mongo Rest API',
                     desc: 'A REST API for MongoDB written in kotlin.',
                     repo: 'https://github.com/LeonPatmore/document-reader',
+                    lang: 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/kotlin.png',
                 },
                 {
                     name: 'Spammer',
                     desc: 'A performance testing tool written in NodeJS.',
                     repo: 'https://github.com/LeonPatmore/spammer-v2',
+                    lang: 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/nodeJs.png',
+                },
+                {
+                    name: 'Messages API Websocket',
+                    desc: 'Websocket integration for a messaging API with AWS Api Gateway integration.',
+                    repo: 'https://github.com/LeonPatmore/messages-api-websocket',
+                    lang: 'https://leon-patmore-cv.s3.eu-west-2.amazonaws.com/nodeJs.png',
                 },
             ],
         };
