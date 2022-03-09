@@ -36,3 +36,6 @@ docker-package:
 
 deploy:
 	npx serverless deploy --package ./package
+
+domain:
+	npx serverless create_domain
