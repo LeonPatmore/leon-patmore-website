@@ -1,5 +1,5 @@
 - Change bar colour. DONE
 - Add more icons to main page. DONE
 - Generate a presigned url for CV. 
-- Fix docker package by using volumes for container.
-- Change projects background.
+- Change projects background. DONE
+- Change domain to standard domain.

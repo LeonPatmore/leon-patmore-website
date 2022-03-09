@@ -31,15 +31,15 @@
                         target="_blank"
                         style="text-decoration: none"
                     >
-                        <v-card-title class="pa-1 white--text">{{
+                        <v-card-title class="pa-1 black--text">{{
                             project.name
                         }}</v-card-title>
                         <v-card-text
-                            class="pa-1 white--text font-weight-light"
+                            class="pa-1 black--text font-weight-light"
                             >{{ project.desc }}</v-card-text
                         >
                         <v-card-text
-                            class="pa-1 white--text font-weight-light"
+                            class="pa-1 black--text font-weight-light"
                             >{{ project.repo }}</v-card-text
                         >
                     </a>
@@ -109,7 +109,7 @@ a {
     color: inherit;
 }
 .title-color {
-    color: rgb(255, 255, 255, 0.85);
+    color: rgb(0, 0, 0, 0.85);
 }
 .bg {
     width: 100%;
@@ -117,8 +117,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background: url('https://cdn.pixabay.com/photo/2016/03/26/13/09/organic-1280537_1280.jpg')
-        no-repeat center center;
+    background: url('~@/static/mountain.jpg') no-repeat center center;
     background-size: cover;
     background-color: transparent;
     transform: scale(1.1);
