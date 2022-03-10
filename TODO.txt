@@ -3,4 +3,4 @@
 - Generate a presigned url for CV. 
 - Change projects background. DONE
 - Change domain to standard domain. DONE
-- Fix mobile view.
+- Fix mobile view. DONE
