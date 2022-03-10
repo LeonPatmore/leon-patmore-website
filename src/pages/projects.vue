@@ -31,21 +31,23 @@
                         target="_blank"
                         style="text-decoration: none"
                     >
-                        <v-card-title class="pa-1 black--text">{{
-                            project.name
-                        }}</v-card-title>
+                        <v-card-title
+                            class="pa-1 black--text text-wrap"
+                            style="word-break: keep-all"
+                            >{{ project.name }}</v-card-title
+                        >
                         <v-card-text
                             class="pa-1 black--text font-weight-light"
                             >{{ project.desc }}</v-card-text
                         >
                         <v-card-text
-                            class="pa-1 black--text font-weight-light"
+                            class="pa-1 black--text font-weight-light text-caption hidden-sm-and-down"
                             >{{ project.repo }}</v-card-text
                         >
                     </a>
                     <v-img
-                        class="ma-3"
-                        min-width="50"
+                        class="ma-1"
+                        min-width="25"
                         width="2vh"
                         max-width="150"
                     >
